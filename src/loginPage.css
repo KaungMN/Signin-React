@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+.body-div {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #1b1d4d;
+  color: white;
+}
+
+.body-div::-webkit-scrollbar {
+  display: none;
+}
+
+.col-1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col-2 {
+  padding: 0;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  max-height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  display: inline-flex;
+  width: 125px;
+  height: 125px;
+  transform: translate(0, 35px);
+}
+
+#signInPic {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.title {
+  max-width: 300px;
+  max-height: 50px;
+  display: inline-flex;
+  transform: translate(0, 45px);
+}
+
+.loginContainer {
+  min-width: 300px;
+  width: 60%;
+  background-color: #141031;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 16pt;
+}
+
+.input {
+  display: inline-block;
+  width: 100%;
+  background-color: #141031;
+  padding: 10px;
+  border-style: ridge;
+  border-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.label {
+  display: block;
+}
+
+.checkBox {
+  display: inline;
+  margin-left: auto;
+}
+
+.checkBoxLabel {
+  display: inline;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.signInButton {
+  font-size: 12pt;
+  width: 12rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #6c63ff;
+  color: white;
+}
+
+.forgetPwd {
+  margin-top: 10px;
+  background-color: #141031;
+  color: white;
+  border-style: none;
+  font-size: 14pt;
+}
+
+.forgetPwd:hover {
+  background-color: #141031;
+  color: #6c63ff;
+}
+
+@media (max-width: 912px) {
+  body {
+    flex-direction: column;
+  }
+  .loginContainer {
+    margin-top: 5%;
+  }
+  #signInPic {
+    max-width: 50%;
+  }
+  #logo {
+    transform: translate(0, 40%);
+  }
+  .title {
+    transform: translate(0, 130%);
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    flex-direction: column;
+  }
+  #signInPic {
+    display: none;
+  }
+  .loginContainer {
+    margin-top: 20%;
+  }
+  #logo {
+    transform: translate(0, 40%);
+  }
+  .title {
+    transform: translate(0, 130%);
+  }
+}
