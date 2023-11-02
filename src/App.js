@@ -40,8 +40,9 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <Car name="BMW" color="red" country="Germany" />
-        <Car name="Toyota" color="black" country="Japan" />
+        <Car name="BMW" color="red" country="Germany" engine="V8" />
+        <br />
+        <Car name="Toyota" color="black" country="Japan" engine="V8" />
       </div>
     );
   }
